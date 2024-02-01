@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(37, 37, 37);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.top-nav-left h1{
+    top: 20px;
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.top-nav-right #log-in{
+    position: absolute;
+    right: 50px;
+    top: 35px;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: #b90e0a;
+    border-radius: 15px;
+    padding: 7px 15px 7px 15px;
+    color: white;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.top-nav-right #log-in:hover{
+    color: #b90e0a;
+    background-color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.pinned-blog{
+    margin-top: 160px;
+    background-color: #2b2b2b;
+    border-radius: 20px;
+    height: 360px;
+    width: 100%;
+    background-image: url("img/7194813.png");
+    background-size: 50% 360px;
+    background-repeat: no-repeat;
+}
+
+.pinned-blog .text h1{
+    color: white;
+    margin-left: 54%;
+    text-align: middle;
+}
+.pinned-blog .text{
+    padding: 70px 0;
+    color: white;
+}
+.pinned-blog .text h2{
+    font-weight: 300;
+    margin-left: 54%;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.pinned-blog .text a{
+    font-size: 20px;
+    margin-left: 54%;
+    border-radius: 10px;
+    top: 10px;
+    padding: 7px 15px 7px 15px;
+    transition: 0.3s;
+    border: 1.5px solid #b90e0a;
+    font-weight: 200;
+}
+.pinned-blog .text a:hover{
+    background-color: #b90e0a;
+    cursor: pointer;
+}
+.pinned-blog .text p1{
+    position: absolute;
+    right: 90px;
+}
+.display-text h1{
+    color: white;
+    margin-top: 100px;
+}
