@@ -3,7 +3,6 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/schedule', (req, res) => {
-    console.log("hello world")
     res.sendFile(__dirname + "/schedule.html");
 });
 

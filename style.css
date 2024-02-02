@@ -172,3 +172,47 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+@media only screen and (max-width: 450px){
+	.pinned-blog{
+        background-image: none;
+        height: auto;
+    }
+    .pinned-blog .text{
+        padding-top: 0px;
+        text-align: center;
+    }
+    .pinned-blog .text h1{
+        margin-left: 0;
+        padding-top: 30px;
+    }
+    .pinned-blog .text h2{
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        padding-right: 0;
+    }
+    .pinned-blog .text a{
+        position: relative;
+        top: -20px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .pinned-blog .text p1{
+        margin-left: 0;
+        top: 20px;
+        text-align: center;
+        margin-right: 0;
+        position: relative;
+        right: 0%;
+        white-space: pre;
+    }
+    #block{
+        text-align: center;
+    }
+    #block p1{
+        position: relative;
+        top: 15px;
+        white-space: pre;
+        margin-right: 20px;
+    }
+}
