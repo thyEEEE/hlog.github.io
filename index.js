@@ -14,6 +14,10 @@ app.get('/blog/my-first-blog', (req, res) => {
     res.sendFile(__dirname + "/blog/my-first-blog.html");
 });
 
+app.get('/admin', (req, res) =>{
+    res.sendFile(__dirname + "/tweet.html");
+})
+
 app.use(express.static("."));
 
 app.listen(PORT, "0.0.0.0", () => {

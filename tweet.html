@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | hlog</title>
+</head>
+
+<body>
+    <input id="input" />
+    <button onclick="add(); return;">Submit</button>
+    <script>
+        const input = document.getElementById("input")
+        function add() {
+            var url = "https://4682ec87-4ade-4c44-8c44-c8040dc13a7f-00-3tq02wghstal8.sisko.replit.dev/";
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", url);
+
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    console.log(xhr.status);
+                    console.log(xhr.responseText);
+                }
+            }
+            const data = {
+                text: `
+    <div class="box">
+    <img/><h1>hy487</h1><p1> |
+    ${new Date().toLocaleString()} </br></br>
+    ${input.value}
+    </div>
+    ` }
+            xhr.send(JSON.stringify(data));
+            input.value = ""
+        }
+    </script>
+</body>
+
+</html>

@@ -221,10 +221,7 @@ body{
     margin-top: 100px;
 }
 #tweet {
-    padding: 20px 20px 10px 20px;
     color: white;
-    background-color: #2b2b2b;
-    border-radius: 10px;
 }
 #tweet img{
     width: 50px;
@@ -234,7 +231,7 @@ body{
 }
 #tweet h1{
     display: inline;
-    margin-left: 20px;
+    margin-left: 15px;
     color:#b90e0a;
     position: relative;
     bottom: 15px
@@ -242,4 +239,11 @@ body{
 #tweet p1{
     position: relative;
     bottom: 19px
+}
+#tweet .box{
+    padding: 20px 20px 0px 20px;
+    color: white;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    margin-top: 20px;
 }
