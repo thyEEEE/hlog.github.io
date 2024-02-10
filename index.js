@@ -18,6 +18,10 @@ app.get('/admin', (req, res) =>{
     res.sendFile(__dirname + "/tweet.html");
 })
 
+app.get('/blog/CNY', (req, res) => {
+    res.sendFile(__dirname + "/blog/CNY.html");
+});
+
 app.use(express.static("."));
 
 app.listen(PORT, "0.0.0.0", () => {
