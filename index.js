@@ -22,6 +22,10 @@ app.get('/blog/CNY', (req, res) => {
     res.sendFile(__dirname + "/blog/CNY.html");
 });
 
+app.get('/blog/genius-idea', (req, res) => {
+    res.sendFile(__dirname + "/blog/genius-idea.html");
+});
+
 app.use(express.static("."));
 
 app.listen(PORT, "0.0.0.0", () => {
